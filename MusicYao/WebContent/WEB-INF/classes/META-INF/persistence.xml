@@ -1,0 +1,17 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+	<persistence-unit name="dictionary">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>jdbc/music</jta-data-source>
+		<non-jta-data-source>jdbc/music-Unmanaged</non-jta-data-source>
+		<properties>
+        	<!-- <property name="hibernate.hbm2ddl.auto" value="create-drop"/> -->
+        	<property name="hibernate.hbm2ddl.auto" value="update"/>
+        	<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+        	<property name="hibernate.show_sql" value="true"/>
+        	<property name="hibernate.format_sql" value="true"/>
+        	<property name="hibernate.transaction.manager_lookup_class"
+                value="org.apache.openejb.hibernate.TransactionManagerLookup"/>
+        	<!-- <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/> -->
+	    </properties>
+	</persistence-unit>
+</persistence>
