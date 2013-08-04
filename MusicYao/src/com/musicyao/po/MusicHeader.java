@@ -3,7 +3,6 @@ package com.musicyao.po;
 import java.io.Serializable;
 
 import javax.persistence.Embeddable;
-import javax.swing.JOptionPane;
 
 import org.jaudiotagger.audio.AudioHeader;
 
@@ -14,7 +13,7 @@ public class MusicHeader implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 9187469615000026795L;
-	private long bitRate;
+	private Long bitRate = 0L;
 	private String channel;
 	private String encodingType;
 	private String format;
@@ -33,11 +32,11 @@ public class MusicHeader implements Serializable{
 		this.format = audioHeader.getFormat();
 		this.sampleRate = audioHeader.getSampleRateAsNumber();
 	}
-	public long getBitRate() {
+	public Long getBitRate() {
 		return bitRate;
 	}
 
-	public void setBitRate(long bitRate) {
+	public void setBitRate(Long bitRate) {
 		this.bitRate = bitRate;
 	}
 

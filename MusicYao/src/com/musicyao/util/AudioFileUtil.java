@@ -24,8 +24,10 @@ public class AudioFileUtil {
 			AudioFile audioFile = AudioFileIO.read(file);
 			AudioHeader audioHeader = audioFile.getAudioHeader();
 			Tag tag = audioFile.getTag();
-			MusicHeader musicHeader = new MusicHeader(audioHeader);
-			music.setHeader(musicHeader);
+			if(audioHeader!=null){
+				MusicHeader musicHeader = new MusicHeader(audioHeader);
+				music.setHeader(musicHeader);
+			}
 			music.setTag(tag);
 			music.setPath(file.getAbsolutePath());
 		} catch (CannotReadException e) {
