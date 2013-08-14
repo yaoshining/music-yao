@@ -8,10 +8,6 @@
 <title>音乐播放器</title>
 <link rel="stylesheet" href="resources/css/app/default.css" media="screen" />
 <script type="text/javascript" data-main="resources/scripts/app" src="resources/scripts/require.js"></script>
-<!-- <script type="text/javascript" src="resources/scripts/jquery/jquery-1.10.2.js" ></script> -->
-<!-- <script type="text/javascript" src="resources/scripts/jquery/jplayer/jquery.jplayer.js"></script> -->
-<!-- <script type="text/javascript" src="resources/scripts/jquery/jquery-migrate-1.2.1.min.js"></script> -->
-<!-- <script type="text/javascript" src="resources/scripts/jquery/app/desktop.js"></script> -->
 <script type="text/javascript">
 <!--
 
