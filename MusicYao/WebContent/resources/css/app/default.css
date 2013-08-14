@@ -1,0 +1,21 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-family: "Î¢ÈíÑÅºÚ","ËÎÌå","Times New Roman";
+}
+body {
+	background: url("../../images/app/wood.jpg");
+	overflow: hidden;
+}
+ul.shotcuts {
+	border: 1px solid #000;
+}
+li.desktop-icon {
+	background: url("../../images/app/icons/configuration.png");
+	width: 118px;
+	height: 120px;
+	float: left;
+	margin: 10px;
+	list-style: none;
+}
