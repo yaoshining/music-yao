@@ -7,5 +7,5 @@ require([
         ],function($,migrate,Desktop,underscore,backbone){
 	var desktop = new Desktop();
 	desktop.say();
-	alert(desktop.get("shortcuts"));
+	alert(desktop.get("shortcuts").length);
 });
